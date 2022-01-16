@@ -33,8 +33,8 @@ export class FilterPipe implements PipeTransform {
      * TIPP: az összehasonlítás előtt a két értéket alakítsd kisbetűsre.
      */
 
-    return value.filter((item) => {
+    return value.filter((item) => 
       String(item[key]).toLowerCase().includes(phrase.toLowerCase())
-    });
+    );
   }
 }
